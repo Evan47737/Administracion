@@ -269,14 +269,7 @@ export default function AgregarTrabajoPage() {
 
           {/* Botones de acción */}
           <div className="form-actions">
-            <button 
-              type="button" 
-              className="cancel-button"
-              onClick={() => router.push('/')}
-              disabled={loading}
-            >
-              Cancelar
-            </button>
+         
             <button 
               type="submit" 
               className="submit-button"
