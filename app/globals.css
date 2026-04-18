@@ -41,3 +41,16 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .chat-messages {
+    padding: 12px;
+  }
+  
+  .message-content {
+    max-width: 85%;
+  }
+  
+  .chat-input-container {
+    padding: 10px 12px;
+  }
+}

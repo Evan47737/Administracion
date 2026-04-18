@@ -307,12 +307,7 @@ export default function DashboardPage() {
                         '✓ Marcar como completado'
                       )}
                     </button>
-                    <button 
-                      className="action-button secondary"
-                      onClick={() => router.push(`/admin/trabajos/${trabajo.id}`)}
-                    >
-                      Ver detalles
-                    </button>
+                    
                   </div>
                 </div>
               ))
@@ -323,7 +318,7 @@ export default function DashboardPage() {
                 <p>¡Todo está al día! No tienes trabajos pendientes.</p>
                 <button 
                   className="create-button"
-                  onClick={() => router.push('/admin/agregar-trabajo')}
+                  onClick={() => router.push('/dashboard/agregar-trabajo')}
                 >
                   ➕ Crear nuevo trabajo
                 </button>
@@ -360,19 +355,19 @@ export default function DashboardPage() {
             <h3>🚀 Acciones rápidas</h3>
             <button 
               className="quick-action-button"
-              onClick={() => router.push('/admin/agregar-trabajo')}
+              onClick={() => router.push('/dashboard/agregar-trabajo')}
             >
               ➕ Nuevo trabajo
             </button>
             <button 
               className="quick-action-button"
-              onClick={() => router.push('/admin/agregar-cliente')}
+              onClick={() => router.push('/dashboard/agregar-cliente')}
             >
               👤 Agregar cliente
             </button>
             <button 
               className="quick-action-button"
-              onClick={() => router.push('/chat')}
+              onClick={() => router.push('/dashboard/chat')}
             >
               💬 Ver mensajes
             </button>

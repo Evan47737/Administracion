@@ -160,7 +160,6 @@ export default function HistorialPage() {
                   <th>Fecha Completado</th>
                   <th>Total</th>
                   <th>Estado</th>
-                  <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
@@ -178,14 +177,7 @@ export default function HistorialPage() {
                     <td>
                       <span className="status-badge completed">✅ Completado</span>
                     </td>
-                    <td>
-                      <button 
-                        className="action-button small"
-                        onClick={() => verDetalles(job.id)}
-                      >
-                        Ver detalles
-                      </button>
-                    </td>
+                  
                   </tr>
                 ))}
               </tbody>
